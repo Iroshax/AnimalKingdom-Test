@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import iro.singtel.birds.Chicken;
 import iro.singtel.birds.Duck;
+import iro.singtel.birds.Rooster;
 /**
  * 
  * @author Iro
@@ -25,5 +26,12 @@ public class TestBirds {
 		Chicken chicken = new Chicken();
 		Assert.assertEquals(chicken.makeSound(), "Cluck, cluck");
 	}
+	
+	@Test
+	public void testRooster() {
+		Rooster rooster = new Rooster();
+		Assert.assertEquals(rooster.makeSound(), "Cock-a-doodle-doo");
+	}
+		
 
 }

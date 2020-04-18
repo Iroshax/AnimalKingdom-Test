@@ -1,18 +1,23 @@
 package iro.singtel.birds;
 
 import iro.singtel.base.Bird;
+import iro.singtel.base.LiveInWater;
 
-
-public class Duck extends Bird{
+/**
+ * 
+ * @author Iro
+ *
+ */
+public class Duck extends Bird implements LiveInWater{
 	
-
-	public String swim() {
-		return "I am swimming";
-	}
-
 	@Override
 	public String makeSound() {
 		return "Quack, quack";
+	}
+
+	@Override
+	public String swim() {
+		return "I am swimming";
 	}
 
 }
